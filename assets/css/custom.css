@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+:root{
+    --primary:#18a4f0;
+    --background__white:#fff;
+    --text_color:#383535;
+    --ackground__gray:#E9E2E2;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+/*
+1.home
+
+*/
+
+/* home section started */
+
+#home {
+    background: var(--background__white);
+    position: fixed;
+    width:100%;
+    z-index: 99999;
+}
+#home .logo a{
+    text-decoration: none;
+    color:var(--primary);
+    font-size: 38px;
+    display: block;
+    margin-left:16px;
+}
+nav{
+    text-align: left;
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.25);
+    position: absolute;
+    width: 100%;
+    background: var(--background__white);
+
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    margin-bottom: 8px;
+    margin-left:16px;
+}
+nav ul li a{ 
+    text-decoration: none;
+    text-transform: capitalize;
+    color:var(--text_color) ;
+}
+nav ul li a:hover{
+    color:var(--primary);
+}
+.toggle__nav{
+   display: none;
+}
+.toggle__nav:checked ~ nav{
+    display: none;
+}
+.toggle__nav__label{
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-right: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.toggle__nav__label span,
+.toggle__nav__label span::after,
+.toggle__nav__label span::before{
+    position: relative;
+    height: 4px;
+    width: 30px;
+    background: var(--primary);
+    display: block;
+    cursor:pointer;
+}
+.toggle__nav__label span::after,
+.toggle__nav__label span::before{
+    position: absolute;
+    content: "";
+}
+.toggle__nav__label span::before{
+    bottom:7px;
+}
+
+.toggle__nav__label span::after{
+    top:7px;
+}
