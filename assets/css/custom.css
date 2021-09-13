@@ -14,6 +14,9 @@ img{
     --text_color:#383535;
     --ackground__gray:#E9E2E2;
 }
+h1,h2,h3{
+    color:var(--text_color);
+}
 body{
     font-family: 'Times New Roman', Times, serif;
 }
@@ -97,4 +100,36 @@ nav ul li a:hover{
 
 .toggle__nav__label span::after{
     top:7px;
+}
+/* hero section started */
+section.hero {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.hero__right {
+    margin-top: 70px;
+    text-align: center;;
+}
+.hero__right__img {
+    width: 70%;
+}
+    /* hero left started */
+.hero__left {
+        padding: 10px 15px;
+}
+.dev__name{
+    color:var(--primary);
+}
+.hero__btn .btn{
+    background-color:var(--primary);
+    color:var(--background__white);
+    padding:8px 26px;
+    border:none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor:pointer;
+    margin-top:10px;
+}
+.hero__btn .btn:last-child{
+    margin-left: 10px;
 }
