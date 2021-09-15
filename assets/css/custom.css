@@ -144,6 +144,10 @@ section.hero {
 .hero__left {
         padding: 10px 15px;
 }
+.hero__left p{
+    color:var(--text_color);
+    font-weight: 550;
+}
 .dev__name{
     color:var(--primary);
 }
@@ -156,6 +160,7 @@ section.hero {
     font-size: 14px;
     cursor:pointer;
     margin-top:10px;
+    text-transform: uppercase;
 }
 .hero__btn .btn:last-child{
     margin-left: 10px;
@@ -292,4 +297,51 @@ section.hero {
 .single__portfilio:hover .portfolio__hover__efects{
 
 display: block;
+}
+
+
+/* contuct section started */
+
+.contuct__container{
+    width:80%;
+    margin:30px auto;
+    background: rgba(107, 117, 113, 0.432);
+    padding:10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px #18a4f0;
+}
+.contuct__container .contuct__left input{
+   width:45%;
+   float:left;
+  margin:5px;
+   border:none;
+   margin-top:3px;
+   padding:3px;
+   border-radius:3px;
+}
+.contuct__container .contuct__right textarea{
+  width:93%;
+  padding:3px;
+ border-radius:3px;
+ border:none;
+ margin: 5px;
+height: 70px;
+outline:none;
+}
+.contuct__container form input[type="button"]{
+    border:none;
+    padding:5px 15px;
+    margin: 5px;
+    background:var(--primary);
+    color:white;
+    border-radius: 3px;
+}
+
+
+/* footer section started  */
+footer p{
+    background: rgb(34, 33, 44);
+    text-align: center;
+    color:white;
+    padding:10px;
 }
