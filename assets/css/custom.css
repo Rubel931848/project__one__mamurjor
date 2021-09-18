@@ -74,7 +74,7 @@ nav{
     position: absolute;
     width: 100%;
     background: var(--background__white);
-
+    display:none;
 }
 nav ul{
     list-style: none;
@@ -95,7 +95,7 @@ nav ul li a:hover{
    display: none;
 }
 .toggle__nav:checked ~ nav{
-    display: none;
+    display: block;
 }
 .toggle__nav__label{
     position: absolute;
@@ -344,4 +344,13 @@ footer p{
     text-align: center;
     color:white;
     padding:10px;
+}
+
+
+
+/* table let disign started*/
+@media screen and (min-width:576px) {
+    body{
+    
+    }
 }
