@@ -335,6 +335,7 @@ outline:none;
     background:var(--primary);
     color:white;
     border-radius: 3px;
+    cursor:pointer;
 }
 
 
@@ -348,9 +349,80 @@ footer p{
 
 
 
-/* table let disign started*/
-@media screen and (min-width:576px) {
-    body{
-    
+/* tablelet disign started*/
+@media screen and (min-width:768px) {
+    /* hero section design started */
+    section.hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
+    .hero > div {
+       flex:1;
+    }
+    .hero__left {
+        padding: 20px 15px;
+    }
+    .hero__right__img {
+        width: 80%;
+    }
+
+/* service section design start */
+    .service__contaainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .service__contaainer > div{
+        flex-basis: 47%;
+    }
+
+    .section__title h2{
+        color:white;
+    }
+
+    /* about section design start */
+    #about .section__title h2{
+        color:var(--text_color);
+    }
+
+    .about__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__container > div{
+        flex-basis: 100%;
+    }
+    .about__right {
+        padding: 10px 30px;
+      
+    }
+    /* portfolio section desgin started */
+    .portfolio__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .portfolio__content > div{
+        flex-basis: 47.3%;
+    }
+    /* contuct form started */
+    #contuct .section__title h2{
+        color:var(--text_color);
+    }
+
+    .contuct__container .contuct__left input {
+        width: 48%;
+        padding: 6px;
+    }
+    .contuct__container .contuct__right textarea {
+        height: 150px;
+        width:98%;
+        padding:6px;
+    }
+    .contuct__container form input[type="button"] {
+        padding: 10px 30px;
+
+    }
+
 }
