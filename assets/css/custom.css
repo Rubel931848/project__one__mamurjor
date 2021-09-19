@@ -88,6 +88,9 @@ nav ul li a{
     text-transform: capitalize;
     color:var(--text_color) ;
 }
+.active{
+    color:var(--primary)
+}
 nav ul li a:hover{
     color:var(--primary);
 }
@@ -423,6 +426,122 @@ footer p{
     .contuct__container form input[type="button"] {
         padding: 10px 30px;
 
+    }
+
+}
+
+
+/* design for desktop mode */
+@media screen and (min-width:992px) {
+    main section {
+        padding: 30px 5%;
+    }
+    #home{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0px 5%;
+        box-shadow:  0px 3px 5px rgba(0,0,0,0.25);
+    }
+    #home .logo a {
+        font-size: 48px;
+        margin-left: 0px;
+       
+    }
+    nav {
+       all:unset;
+
+    }
+    nav ul li {
+        margin-bottom: 0px;
+        margin-left: 50px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    nav ul{
+        display: flex;
+    }
+    .toggle__nav__label {
+        display: none;
+    }
+
+    /* hero section started */
+
+    .hero h2 {
+        font-size: 42px;
+    }
+    .hero__right__img {
+        width: 90%;
+        margin-top:15px;
+        margin-bottom:-40px;
+        margin-right: -50px;
+    }
+   
+/* design for service section */
+    .service__contaainer > div {
+        flex-basis: 31.2%;
+    }
+
+    /* design for about me sectin */
+    .about__left img {
+        width: 80%;
+    }
+    .about__left img {
+	width: 70%;
+}
+    .about__right h3 {
+        font-size: 32px;
+    }
+    .about__right p {
+        font-size: 18px;
+    }
+
+    /* portfolio sectionj start */
+
+    .portfolio__content > div {
+        flex-basis: 31.3%;
+    }
+/* contuct sectin started */
+    .contuct__container {
+        padding: 30px;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+    form .contuct__left{
+        flex-basis: 48%;
+        margin:5px 0;
+      
+    }
+    .contuct__container .contuct__left input{
+        width: 100%;
+        padding: 15px 10px;
+    }
+    form .contuct__right{
+        flex-basis: 48%;
+    }
+    .contuct__container .contuct__right textarea {
+        height: 95%;
+        width: 98%;
+
+    }
+    .contuct__container form .btn{
+        flex-basis: 100%; 
+    }
+     .contuct__container form .btn input[type="button"] {
+            padding: 10px 100px;
+            display: block;
+            margin:0px auto;
+     }
+
+     /* footer section started */
+
+     footer p {
+        padding: 20px;
+        font-size:18px;
     }
 
 }
